@@ -11,10 +11,10 @@ if (fs.existsSync(TESTENV)) {
   });
 }
 
-var ISSUER = process.env.ISSUER;
+var ISSUER = process.env.ISSUER || "https://decedo.okta.com/oauth2/default";
 var CLIENT_ID = process.env.CLIENT_ID;
-var CLIENT_SECRET = process.env.CLIENT_SECRET;
-var SPA_CLIENT_ID = process.env.SPA_CLIENT_ID;
+var CLIENT_SECRET = process.env.CLIENT_SECRET || "456XX";
+var SPA_CLIENT_ID = process.env.SPA_CLIENT_ID || "0oa1pindts9Rdw5pr5d6";
 var OKTA_TESTING_DISABLEHTTPSCHECK = process.env.OKTA_TESTING_DISABLEHTTPSCHECK
   ? true
   : false;
