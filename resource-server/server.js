@@ -97,7 +97,5 @@ app.get("/api/messages", authenticationRequired, (req, res) => {
 // });
 
 app.listen(process.env.PORT, () => {
-  console.log(
-    `Resource Server Ready on port ${sampleConfig.resourceServer.port}`
-  );
+  console.log(`Resource Server Ready on port ${process.env.PORT}`);
 });
